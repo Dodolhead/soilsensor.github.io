@@ -1,0 +1,718 @@
+/*Home page*/
+.nav-menu .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #232222;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.description-container img {
+margin-top: 20px; /* Adjust the margin-top to lower the image */
+}
+
+body {
+background-color: #000000;
+background-image: url(assets/Screenshot\ 2023-11-25\ 085735.png); 
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: white;
+}
+
+.card {
+margin: 20px;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px; 
+}
+
+.description-container img {
+    margin-top: 10px; 
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar a:hover {
+  color: darkblue; 
+  text-decoration: underline; 
+}
+
+.navbar {
+  background: rgb(22, 22, 28);
+  height: 85px;
+  display: flex;
+  padding: 0 10%;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.473);
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(3, 3, 62, 0.941);
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+body {
+  margin-top: 60px;
+}
+
+.navbar > h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0; 
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  padding: 0 20%;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-menu a:hover {
+  color: rgb(92, 92, 242);
+  width: max-content;
+  font-size: 19px;
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+section {
+  margin-top: 20px; 
+}
+
+.hero-container {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  display: flex;
+  height: 470px;
+  padding: 0 10%;
+}
+
+.hero-container > div {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%
+  }
+  to {
+    margin-left: 0% ;
+  }
+}
+
+.hero-container p {
+  font-size: 45px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-container h1 {
+  font-size: 75px;
+  width: 360px;
+  margin: 20px 0;
+  font-weight: bolder;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%
+  }
+  to {
+    margin-left: 0% ;
+  }
+}
+
+.hero-container > img {
+  width: 50%;
+  height: 450px;
+  align-self: center;
+  align-items:flex-end;
+}
+
+.description-container {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  height: 280px;
+  margin: 40px 0;
+  padding: 0 10%;
+  display: flex;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%
+  }
+  to {
+    margin-left: 0% ;
+  }
+}
+
+.description-container > div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+  border-top: 1px solid #2d3748;
+  outline:black
+}
+
+.content-container {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  min-height: 400px;
+  margin: 40px 0;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%
+  }
+  to {
+    margin-right: 0% ;
+  }
+}
+
+.content-container .card {
+  height: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.1);
+  transform: 0.3s;
+  background:#202123;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+  cursor: pointer;
+  background-color: darkblue;
+}
+
+.card > img {
+  object-fit: fill;
+  height: 150px;
+  width: 23%;
+}
+
+.card {
+  background-color: #202123;
+}
+
+.card > .card-body {
+  padding: 20px;
+  color: white
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 0 15px 0 0;
+}
+
+.card p {
+  font-size: 100px;
+}
+
+.card > .card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.card img.center-image {
+  height: 200px; 
+  object-fit: cover;
+  width: 100%; 
+}
+
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.card {
+  margin: 10px;
+  width: 450px; 
+  text-align: center; 
+}
+
+  /* Add a style for the fixed height of card images */
+.card img.center-image {
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  width: 100%; /* Ensure the image takes the full width of the card */
+}
+
+/* Center the remaining cards */
+.content-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.card {
+  margin: 10px;
+  width: 350px; /* Adjust the width as needed */
+  text-align: center; /* Center text content in the card */
+  overflow: hidden;
+  position: relative;
+}
+/* Animation for images sliding from left */
+.card:nth-child(odd) img {
+  left: -100%;
+  animation-name: slideInLeft;
+}
+
+/* Animation for images sliding from right */
+.card:nth-child(even) img {
+right: -100%;
+animation-name: slideInRight;
+}
+
+/* Keyframes for sliding animations */
+@keyframes slideInLeft {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.what-is-container {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  height: 600px;
+  padding: 0 10%;
+  display: flex;
+  margin: 40px 0;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0% ;
+  }
+}
+
+.what-is-container h1 {
+  font-size: 45px;
+}
+
+.what-is-container p {
+  color: aliceblue;
+  font-size: 19px;
+}
+
+.what-is-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 48%;
+  background: rgb(255, 170, 0);
+  background: black;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.what-is-container > div > div {
+  width: 400px;
+}
+
+.what-is-container > div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+  border-top: 1px solid #2d3748;
+  outline: black;
+}
+
+.what-is-container img {
+  width: 50%;
+  background: #202123;
+  border-top-right-radius: 15px; 
+  border-bottom-right-radius: 15px; 
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.hero-section {
+  background-color: #202123; 
+  padding: 20px 0;
+}
+
+.hero-section {
+  background-color: #202123; /* Set the background color for the hero section container */
+  padding: 20px 0; /* Add padding as needed */
+  transition: transform 0.3s ease-in-out; /* Add smooth transition for hiding/showing effect */
+}
+
+/* Add this style to hide the hero section when scrolled down */
+.hero-section.hidden {
+  transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 420px) {
+  .hero-container {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .hero-container > div {
+    width: 100%;
+    height: 250px;
+  }
+
+  .hero-container > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-container h1 {
+    font-size: 60px;
+    width: 360px;
+    margin: 20px 0;
+    font-weight: bolder;
+  }
+
+  .hero-container p {
+    font-size: 30px;
+    color: white;
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+
+  .description-container {
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+  }
+
+  .description-container h2,
+  .description-container p {
+    text-align: center;
+  }
+
+  .description-container > div {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .description-container > div > div {
+    width: 100%;
+  }
+
+  .description-container > img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .what-is-container {
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .what-is-container > div {
+    width: 100%;
+  }
+
+  .what-is-container > div > div {
+    width: 100%;
+  }
+
+  .what-is-container > img {
+    width: 100%;
+  }
+
+  .what-is-container h1 {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .what-is-container p {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+
+}
+
+/*Home page*/
+
+/*Suggesion page*/
+
+.accordion {
+  margin: 60px auto;
+  width: 1200px;
+  text-align: center;
+}
+
+.accordion li{
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgb(22, 22, 28);
+  box-shadow: 6px 6px 10px -1px rgb(80, 45, 45), -6px -6px -10px -1px rgb(39, 38, 38);
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%
+  }
+  to {
+    margin-left: 0% ;
+  }
+}
+
+.accordion li {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgb(22, 22, 28);
+  box-shadow: 6px 6px 10px -1px rgb(80, 45, 45), -6px -6px -10px -1px rgb(39, 38, 38);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.accordion li {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  color: white;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+  height: 150px;
+  overflow-y: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+  content: "-";
+}
+
+@media only screen and (max-width: 420px) {
+  .accordion {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+/* Measurement page */
+.measurement-box {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #202123;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  flex-wrap: nowrap; /* Ensure items stay in the same line */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.measurement-item {
+  text-align: center;
+  margin: 5px; /* Adjusted margin to make the space smaller */
+}
+
+.measurement-title {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.measurement-image {
+  max-width: 30%;
+  height: auto;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.loading-text {
+  color: white;
+  font-size: 30px; 
+}
+
+@media only screen and (max-width: 420px) {
+  .measurement-box {
+    width: 100%;
+    margin: 10px;
+  }
+}
+/* Team page */
+
+.card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 16px;
+  color: var(--primary);
+}
+
+/* General styles for links */
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 420px) {
+  .hero-container,
+  .hero-container > div,
+  .hero-container > img,
+  .navbar,
+  .content-container,
+  .description-container,
+  .what-is-container {
+    background-color: var(--darkGray);
+    color: var(--grayLight);
+  }
+}
